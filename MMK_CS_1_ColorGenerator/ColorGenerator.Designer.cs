@@ -46,21 +46,24 @@
             this.statusStrip_StatusBar = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox_Color = new System.Windows.Forms.GroupBox();
+            this.label_Color_Blue_Value = new System.Windows.Forms.Label();
+            this.label_Color_Green_Value = new System.Windows.Forms.Label();
+            this.label_Color_Red_Value = new System.Windows.Forms.Label();
             this.trackBar_Color_Blue = new System.Windows.Forms.TrackBar();
             this.label_Color_Blue = new System.Windows.Forms.Label();
             this.trackBar_Color_Green = new System.Windows.Forms.TrackBar();
             this.label_Color_Green = new System.Windows.Forms.Label();
             this.trackBar_Color_Red = new System.Windows.Forms.TrackBar();
             this.label_Color_Red = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox_ColorView = new System.Windows.Forms.GroupBox();
+            this.label_ColorView = new System.Windows.Forms.Label();
             this.menuStrip_MainMenu.SuspendLayout();
             this.statusStrip_StatusBar.SuspendLayout();
             this.groupBox_Color.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Color_Blue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Color_Green)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Color_Red)).BeginInit();
+            this.groupBox_ColorView.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip_MainMenu
@@ -177,7 +180,7 @@
             // 
             this.statusStrip_StatusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip_StatusBar.Location = new System.Drawing.Point(0, 348);
+            this.statusStrip_StatusBar.Location = new System.Drawing.Point(0, 358);
             this.statusStrip_StatusBar.Name = "statusStrip_StatusBar";
             this.statusStrip_StatusBar.Size = new System.Drawing.Size(527, 22);
             this.statusStrip_StatusBar.TabIndex = 1;
@@ -191,9 +194,9 @@
             // 
             // groupBox_Color
             // 
-            this.groupBox_Color.Controls.Add(this.label3);
-            this.groupBox_Color.Controls.Add(this.label2);
-            this.groupBox_Color.Controls.Add(this.label1);
+            this.groupBox_Color.Controls.Add(this.label_Color_Blue_Value);
+            this.groupBox_Color.Controls.Add(this.label_Color_Green_Value);
+            this.groupBox_Color.Controls.Add(this.label_Color_Red_Value);
             this.groupBox_Color.Controls.Add(this.trackBar_Color_Blue);
             this.groupBox_Color.Controls.Add(this.label_Color_Blue);
             this.groupBox_Color.Controls.Add(this.trackBar_Color_Green);
@@ -207,6 +210,36 @@
             this.groupBox_Color.TabStop = false;
             this.groupBox_Color.Text = "Color";
             // 
+            // label_Color_Blue_Value
+            // 
+            this.label_Color_Blue_Value.AutoSize = true;
+            this.label_Color_Blue_Value.ForeColor = System.Drawing.Color.Blue;
+            this.label_Color_Blue_Value.Location = new System.Drawing.Point(361, 132);
+            this.label_Color_Blue_Value.Name = "label_Color_Blue_Value";
+            this.label_Color_Blue_Value.Size = new System.Drawing.Size(13, 15);
+            this.label_Color_Blue_Value.TabIndex = 7;
+            this.label_Color_Blue_Value.Text = "0";
+            // 
+            // label_Color_Green_Value
+            // 
+            this.label_Color_Green_Value.AutoSize = true;
+            this.label_Color_Green_Value.ForeColor = System.Drawing.Color.Green;
+            this.label_Color_Green_Value.Location = new System.Drawing.Point(361, 81);
+            this.label_Color_Green_Value.Name = "label_Color_Green_Value";
+            this.label_Color_Green_Value.Size = new System.Drawing.Size(13, 15);
+            this.label_Color_Green_Value.TabIndex = 6;
+            this.label_Color_Green_Value.Text = "0";
+            // 
+            // label_Color_Red_Value
+            // 
+            this.label_Color_Red_Value.AutoSize = true;
+            this.label_Color_Red_Value.ForeColor = System.Drawing.Color.Red;
+            this.label_Color_Red_Value.Location = new System.Drawing.Point(361, 30);
+            this.label_Color_Red_Value.Name = "label_Color_Red_Value";
+            this.label_Color_Red_Value.Size = new System.Drawing.Size(13, 15);
+            this.label_Color_Red_Value.TabIndex = 3;
+            this.label_Color_Red_Value.Text = "0";
+            // 
             // trackBar_Color_Blue
             // 
             this.trackBar_Color_Blue.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -216,6 +249,7 @@
             this.trackBar_Color_Blue.Size = new System.Drawing.Size(302, 45);
             this.trackBar_Color_Blue.TabIndex = 5;
             this.trackBar_Color_Blue.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.trackBar_Color_Blue.ValueChanged += new System.EventHandler(this.trackBar_Color_Blue_ValueChanged);
             // 
             // label_Color_Blue
             // 
@@ -236,6 +270,7 @@
             this.trackBar_Color_Green.Size = new System.Drawing.Size(302, 45);
             this.trackBar_Color_Green.TabIndex = 3;
             this.trackBar_Color_Green.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.trackBar_Color_Green.ValueChanged += new System.EventHandler(this.trackBar_Color_Green_ValueChanged);
             // 
             // label_Color_Green
             // 
@@ -256,6 +291,8 @@
             this.trackBar_Color_Red.Size = new System.Drawing.Size(302, 45);
             this.trackBar_Color_Red.TabIndex = 1;
             this.trackBar_Color_Red.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.trackBar_Color_Red.Scroll += new System.EventHandler(this.trackBar_Color_Red_Scroll);
+            this.trackBar_Color_Red.ValueChanged += new System.EventHandler(this.trackBar_Color_Red_ValueChanged);
             // 
             // label_Color_Red
             // 
@@ -267,41 +304,32 @@
             this.label_Color_Red.TabIndex = 0;
             this.label_Color_Red.Text = "Red:";
             // 
-            // label1
+            // groupBox_ColorView
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(361, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "0";
+            this.groupBox_ColorView.Controls.Add(this.label_ColorView);
+            this.groupBox_ColorView.Location = new System.Drawing.Point(407, 27);
+            this.groupBox_ColorView.Name = "groupBox_ColorView";
+            this.groupBox_ColorView.Size = new System.Drawing.Size(108, 96);
+            this.groupBox_ColorView.TabIndex = 3;
+            this.groupBox_ColorView.TabStop = false;
+            this.groupBox_ColorView.Text = "Color View";
             // 
-            // label2
+            // label_ColorView
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Green;
-            this.label2.Location = new System.Drawing.Point(361, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 15);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "0";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(361, 132);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 15);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "0";
+            this.label_ColorView.BackColor = System.Drawing.Color.Black;
+            this.label_ColorView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_ColorView.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_ColorView.Location = new System.Drawing.Point(30, 27);
+            this.label_ColorView.Name = "label_ColorView";
+            this.label_ColorView.Size = new System.Drawing.Size(50, 50);
+            this.label_ColorView.TabIndex = 0;
             // 
             // ColorGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 370);
+            this.ClientSize = new System.Drawing.Size(527, 380);
+            this.Controls.Add(this.groupBox_ColorView);
             this.Controls.Add(this.groupBox_Color);
             this.Controls.Add(this.statusStrip_StatusBar);
             this.Controls.Add(this.menuStrip_MainMenu);
@@ -317,6 +345,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Color_Blue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Color_Green)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Color_Red)).EndInit();
+            this.groupBox_ColorView.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,8 +376,10 @@
         private Label label_Color_Blue;
         private TrackBar trackBar_Color_Green;
         private Label label_Color_Green;
-        private Label label2;
-        private Label label1;
-        private Label label3;
+        private Label label_Color_Green_Value;
+        private Label label_Color_Red_Value;
+        private Label label_Color_Blue_Value;
+        private GroupBox groupBox_ColorView;
+        private Label label_ColorView;
     }
 }
