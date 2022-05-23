@@ -1,8 +1,8 @@
 namespace MMK_CS_1_ColorGenerator
 {
-    public partial class Form1 : Form
+    public partial class ColorGenerator : Form
     {
-        public Form1()
+        public ColorGenerator()
         {
             InitializeComponent();
         }

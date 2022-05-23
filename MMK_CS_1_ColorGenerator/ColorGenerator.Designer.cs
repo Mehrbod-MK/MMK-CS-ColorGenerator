@@ -1,6 +1,6 @@
 ﻿namespace MMK_CS_1_ColorGenerator
 {
-    partial class Form1
+    partial class ColorGenerator
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColorGenerator));
             this.menuStrip_MainMenu = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,7 +43,11 @@
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip_StatusBar = new System.Windows.Forms.StatusStrip();
+            this.groupBox_Color = new System.Windows.Forms.GroupBox();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip_MainMenu.SuspendLayout();
+            this.statusStrip_StatusBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip_MainMenu
@@ -54,7 +58,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip_MainMenu.Location = new System.Drawing.Point(0, 0);
             this.menuStrip_MainMenu.Name = "menuStrip_MainMenu";
-            this.menuStrip_MainMenu.Size = new System.Drawing.Size(515, 24);
+            this.menuStrip_MainMenu.Size = new System.Drawing.Size(527, 24);
             this.menuStrip_MainMenu.TabIndex = 0;
             this.menuStrip_MainMenu.Text = "menuStrip1";
             // 
@@ -156,17 +160,46 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
+            // statusStrip_StatusBar
+            // 
+            this.statusStrip_StatusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip_StatusBar.Location = new System.Drawing.Point(0, 312);
+            this.statusStrip_StatusBar.Name = "statusStrip_StatusBar";
+            this.statusStrip_StatusBar.Size = new System.Drawing.Size(527, 22);
+            this.statusStrip_StatusBar.TabIndex = 1;
+            this.statusStrip_StatusBar.Text = "statusStrip1";
+            // 
+            // groupBox_Color
+            // 
+            this.groupBox_Color.Location = new System.Drawing.Point(12, 27);
+            this.groupBox_Color.Name = "groupBox_Color";
+            this.groupBox_Color.Size = new System.Drawing.Size(252, 154);
+            this.groupBox_Color.TabIndex = 2;
+            this.groupBox_Color.TabStop = false;
+            this.groupBox_Color.Text = "Color";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(39, 17);
+            this.toolStripStatusLabel1.Text = "Ready";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 321);
+            this.ClientSize = new System.Drawing.Size(527, 334);
+            this.Controls.Add(this.groupBox_Color);
+            this.Controls.Add(this.statusStrip_StatusBar);
             this.Controls.Add(this.menuStrip_MainMenu);
             this.MainMenuStrip = this.menuStrip_MainMenu;
             this.Name = "Form1";
             this.Text = "Mehrbod M.K. C# Color Generator";
             this.menuStrip_MainMenu.ResumeLayout(false);
             this.menuStrip_MainMenu.PerformLayout();
+            this.statusStrip_StatusBar.ResumeLayout(false);
+            this.statusStrip_StatusBar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +221,8 @@
         private ToolStripMenuItem optionsToolStripMenuItem;
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
+        private StatusStrip statusStrip_StatusBar;
+        private GroupBox groupBox_Color;
+        private ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
