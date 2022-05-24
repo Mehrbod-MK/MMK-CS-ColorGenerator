@@ -62,6 +62,15 @@
             this.checkBox_Painter_FrgColor = new System.Windows.Forms.CheckBox();
             this.groupBox_TextView = new System.Windows.Forms.GroupBox();
             this.label_TextView = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label_Text_1 = new System.Windows.Forms.Label();
+            this.label_Text_2 = new System.Windows.Forms.Label();
+            this.label_Text_3 = new System.Windows.Forms.Label();
+            this.label_Text_4 = new System.Windows.Forms.Label();
+            this.label_Text_8 = new System.Windows.Forms.Label();
+            this.label_Text_7 = new System.Windows.Forms.Label();
+            this.label_Text_6 = new System.Windows.Forms.Label();
+            this.label_Text_5 = new System.Windows.Forms.Label();
             this.menuStrip_MainMenu.SuspendLayout();
             this.statusStrip_StatusBar.SuspendLayout();
             this.groupBox_Color.SuspendLayout();
@@ -71,6 +80,7 @@
             this.groupBox_ColorView.SuspendLayout();
             this.groupBox_Painter.SuspendLayout();
             this.groupBox_TextView.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip_MainMenu
@@ -376,13 +386,13 @@
             this.groupBox_TextView.Size = new System.Drawing.Size(266, 62);
             this.groupBox_TextView.TabIndex = 5;
             this.groupBox_TextView.TabStop = false;
-            this.groupBox_TextView.Text = "Text View (Click to apply)";
+            this.groupBox_TextView.Text = "Text View (Click to update)";
             // 
             // label_TextView
             // 
             this.label_TextView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_TextView.BackColor = System.Drawing.Color.Black;
+            this.label_TextView.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.label_TextView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_TextView.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label_TextView.ForeColor = System.Drawing.Color.Black;
@@ -390,13 +400,144 @@
             this.label_TextView.Name = "label_TextView";
             this.label_TextView.Size = new System.Drawing.Size(254, 22);
             this.label_TextView.TabIndex = 0;
-            this.label_TextView.Text = "A brown fox jumps over the lazy dog";
+            this.label_TextView.Text = "The quick brown fox jumps over the lazy dog";
+            this.label_TextView.Click += new System.EventHandler(this.label_TextView_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label_Text_8);
+            this.groupBox1.Controls.Add(this.label_Text_7);
+            this.groupBox1.Controls.Add(this.label_Text_6);
+            this.groupBox1.Controls.Add(this.label_Text_5);
+            this.groupBox1.Controls.Add(this.label_Text_4);
+            this.groupBox1.Controls.Add(this.label_Text_3);
+            this.groupBox1.Controls.Add(this.label_Text_2);
+            this.groupBox1.Controls.Add(this.label_Text_1);
+            this.groupBox1.Location = new System.Drawing.Point(12, 288);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(556, 121);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Text Pallete";
+            // 
+            // label_Text_1
+            // 
+            this.label_Text_1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Text_1.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label_Text_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Text_1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_Text_1.ForeColor = System.Drawing.Color.Black;
+            this.label_Text_1.Location = new System.Drawing.Point(6, 22);
+            this.label_Text_1.Name = "label_Text_1";
+            this.label_Text_1.Size = new System.Drawing.Size(254, 22);
+            this.label_Text_1.TabIndex = 1;
+            this.label_Text_1.Text = "The quick brown fox jumps over the lazy dog";
+            // 
+            // label_Text_2
+            // 
+            this.label_Text_2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Text_2.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label_Text_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Text_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_Text_2.ForeColor = System.Drawing.Color.Black;
+            this.label_Text_2.Location = new System.Drawing.Point(6, 44);
+            this.label_Text_2.Name = "label_Text_2";
+            this.label_Text_2.Size = new System.Drawing.Size(254, 22);
+            this.label_Text_2.TabIndex = 2;
+            this.label_Text_2.Text = "The quick brown fox jumps over the lazy dog";
+            // 
+            // label_Text_3
+            // 
+            this.label_Text_3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Text_3.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label_Text_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Text_3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_Text_3.ForeColor = System.Drawing.Color.Black;
+            this.label_Text_3.Location = new System.Drawing.Point(6, 66);
+            this.label_Text_3.Name = "label_Text_3";
+            this.label_Text_3.Size = new System.Drawing.Size(254, 22);
+            this.label_Text_3.TabIndex = 3;
+            this.label_Text_3.Text = "The quick brown fox jumps over the lazy dog";
+            // 
+            // label_Text_4
+            // 
+            this.label_Text_4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Text_4.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label_Text_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Text_4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_Text_4.ForeColor = System.Drawing.Color.Black;
+            this.label_Text_4.Location = new System.Drawing.Point(6, 88);
+            this.label_Text_4.Name = "label_Text_4";
+            this.label_Text_4.Size = new System.Drawing.Size(254, 22);
+            this.label_Text_4.TabIndex = 4;
+            this.label_Text_4.Text = "The quick brown fox jumps over the lazy dog";
+            // 
+            // label_Text_8
+            // 
+            this.label_Text_8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Text_8.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label_Text_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Text_8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_Text_8.ForeColor = System.Drawing.Color.Black;
+            this.label_Text_8.Location = new System.Drawing.Point(296, 88);
+            this.label_Text_8.Name = "label_Text_8";
+            this.label_Text_8.Size = new System.Drawing.Size(254, 22);
+            this.label_Text_8.TabIndex = 8;
+            this.label_Text_8.Text = "The quick brown fox jumps over the lazy dog";
+            // 
+            // label_Text_7
+            // 
+            this.label_Text_7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Text_7.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label_Text_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Text_7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_Text_7.ForeColor = System.Drawing.Color.Black;
+            this.label_Text_7.Location = new System.Drawing.Point(296, 66);
+            this.label_Text_7.Name = "label_Text_7";
+            this.label_Text_7.Size = new System.Drawing.Size(254, 22);
+            this.label_Text_7.TabIndex = 7;
+            this.label_Text_7.Text = "The quick brown fox jumps over the lazy dog";
+            // 
+            // label_Text_6
+            // 
+            this.label_Text_6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Text_6.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label_Text_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Text_6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_Text_6.ForeColor = System.Drawing.Color.Black;
+            this.label_Text_6.Location = new System.Drawing.Point(296, 44);
+            this.label_Text_6.Name = "label_Text_6";
+            this.label_Text_6.Size = new System.Drawing.Size(254, 22);
+            this.label_Text_6.TabIndex = 6;
+            this.label_Text_6.Text = "The quick brown fox jumps over the lazy dog";
+            // 
+            // label_Text_5
+            // 
+            this.label_Text_5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Text_5.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label_Text_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Text_5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_Text_5.ForeColor = System.Drawing.Color.Black;
+            this.label_Text_5.Location = new System.Drawing.Point(296, 22);
+            this.label_Text_5.Name = "label_Text_5";
+            this.label_Text_5.Size = new System.Drawing.Size(254, 22);
+            this.label_Text_5.TabIndex = 5;
+            this.label_Text_5.Text = "The quick brown fox jumps over the lazy dog";
             // 
             // ColorGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 434);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox_TextView);
             this.Controls.Add(this.groupBox_Painter);
             this.Controls.Add(this.groupBox_ColorView);
@@ -419,6 +560,7 @@
             this.groupBox_Painter.ResumeLayout(false);
             this.groupBox_Painter.PerformLayout();
             this.groupBox_TextView.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -459,5 +601,14 @@
         private CheckBox checkBox_Painter_FrgColor;
         private GroupBox groupBox_TextView;
         private Label label_TextView;
+        private GroupBox groupBox1;
+        private Label label_Text_8;
+        private Label label_Text_7;
+        private Label label_Text_6;
+        private Label label_Text_5;
+        private Label label_Text_4;
+        private Label label_Text_3;
+        private Label label_Text_2;
+        private Label label_Text_1;
     }
 }
