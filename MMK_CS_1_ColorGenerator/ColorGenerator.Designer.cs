@@ -398,7 +398,7 @@
             this.label_TextView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_TextView.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label_TextView.ForeColor = System.Drawing.Color.Black;
-            this.label_TextView.Location = new System.Drawing.Point(6, 23);
+            this.label_TextView.Location = new System.Drawing.Point(6, 25);
             this.label_TextView.Name = "label_TextView";
             this.label_TextView.Size = new System.Drawing.Size(254, 22);
             this.label_TextView.TabIndex = 0;
@@ -407,6 +407,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.label_Text_8);
             this.groupBox1.Controls.Add(this.label_Text_7);
             this.groupBox1.Controls.Add(this.label_Text_6);
@@ -480,8 +483,6 @@
             // 
             // label_Text_4
             // 
-            this.label_Text_4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Text_4.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.label_Text_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_Text_4.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -494,8 +495,6 @@
             // 
             // label_Text_3
             // 
-            this.label_Text_3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Text_3.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.label_Text_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_Text_3.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -508,8 +507,6 @@
             // 
             // label_Text_2
             // 
-            this.label_Text_2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Text_2.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.label_Text_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_Text_2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -522,8 +519,6 @@
             // 
             // label_Text_1
             // 
-            this.label_Text_1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Text_1.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.label_Text_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_Text_1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -547,6 +542,7 @@
             this.Controls.Add(this.statusStrip_StatusBar);
             this.Controls.Add(this.menuStrip_MainMenu);
             this.MainMenuStrip = this.menuStrip_MainMenu;
+            this.MinimumSize = new System.Drawing.Size(596, 473);
             this.Name = "ColorGenerator";
             this.Text = "Mehrbod M.K. C# Color Generator";
             this.menuStrip_MainMenu.ResumeLayout(false);
