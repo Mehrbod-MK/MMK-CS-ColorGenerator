@@ -7,7 +7,16 @@ namespace MMK_CS_1_ColorGenerator
             InitializeComponent();
 
             // Add event handlers for labels.
-
+#pragma warning disable CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
+            label_Text_1.Click += new EventHandler(label_Texts_Click);
+            label_Text_2.Click += new EventHandler(label_Texts_Click);
+            label_Text_3.Click += new EventHandler(label_Texts_Click);
+            label_Text_4.Click += new EventHandler(label_Texts_Click);
+            label_Text_5.Click += new EventHandler(label_Texts_Click);
+            label_Text_6.Click += new EventHandler(label_Texts_Click);
+            label_Text_7.Click += new EventHandler(label_Texts_Click);
+            label_Text_8.Click += new EventHandler(label_Texts_Click);
+#pragma warning restore CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
         }
 
         private void trackBar_Color_Red_Scroll(object sender, EventArgs e)
@@ -52,6 +61,11 @@ namespace MMK_CS_1_ColorGenerator
         }
 
         private void label_TextView_Click(object sender, EventArgs e)
+        {
+            setLabelColors((Label)sender, label_ColorView.BackColor);
+        }
+
+        private void label_Texts_Click(object sender, EventArgs e)
         {
             setLabelColors((Label)sender, label_ColorView.BackColor);
         }

@@ -58,19 +58,19 @@
             this.groupBox_ColorView = new System.Windows.Forms.GroupBox();
             this.label_ColorView = new System.Windows.Forms.Label();
             this.groupBox_Painter = new System.Windows.Forms.GroupBox();
-            this.checkBox_Painter_BkgColor = new System.Windows.Forms.CheckBox();
             this.checkBox_Painter_FrgColor = new System.Windows.Forms.CheckBox();
+            this.checkBox_Painter_BkgColor = new System.Windows.Forms.CheckBox();
             this.groupBox_TextView = new System.Windows.Forms.GroupBox();
             this.label_TextView = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label_Text_1 = new System.Windows.Forms.Label();
-            this.label_Text_2 = new System.Windows.Forms.Label();
-            this.label_Text_3 = new System.Windows.Forms.Label();
-            this.label_Text_4 = new System.Windows.Forms.Label();
             this.label_Text_8 = new System.Windows.Forms.Label();
             this.label_Text_7 = new System.Windows.Forms.Label();
             this.label_Text_6 = new System.Windows.Forms.Label();
             this.label_Text_5 = new System.Windows.Forms.Label();
+            this.label_Text_4 = new System.Windows.Forms.Label();
+            this.label_Text_3 = new System.Windows.Forms.Label();
+            this.label_Text_2 = new System.Windows.Forms.Label();
+            this.label_Text_1 = new System.Windows.Forms.Label();
             this.menuStrip_MainMenu.SuspendLayout();
             this.statusStrip_StatusBar.SuspendLayout();
             this.groupBox_Color.SuspendLayout();
@@ -115,7 +115,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // openToolStripMenuItem
@@ -124,13 +124,13 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -138,24 +138,24 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // toolsToolStripMenuItem
@@ -170,13 +170,13 @@
             // customizeToolStripMenuItem
             // 
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.customizeToolStripMenuItem.Text = "&Customize";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
             // helpToolStripMenuItem
@@ -190,7 +190,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // statusStrip_StatusBar
@@ -356,25 +356,27 @@
             this.groupBox_Painter.TabStop = false;
             this.groupBox_Painter.Text = "Painter";
             // 
-            // checkBox_Painter_BkgColor
-            // 
-            this.checkBox_Painter_BkgColor.AutoSize = true;
-            this.checkBox_Painter_BkgColor.Location = new System.Drawing.Point(6, 26);
-            this.checkBox_Painter_BkgColor.Name = "checkBox_Painter_BkgColor";
-            this.checkBox_Painter_BkgColor.Size = new System.Drawing.Size(122, 19);
-            this.checkBox_Painter_BkgColor.TabIndex = 0;
-            this.checkBox_Painter_BkgColor.Text = "Background Color";
-            this.checkBox_Painter_BkgColor.UseVisualStyleBackColor = true;
-            // 
             // checkBox_Painter_FrgColor
             // 
             this.checkBox_Painter_FrgColor.AutoSize = true;
+            this.checkBox_Painter_FrgColor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox_Painter_FrgColor.Location = new System.Drawing.Point(157, 26);
             this.checkBox_Painter_FrgColor.Name = "checkBox_Painter_FrgColor";
             this.checkBox_Painter_FrgColor.Size = new System.Drawing.Size(120, 19);
             this.checkBox_Painter_FrgColor.TabIndex = 1;
             this.checkBox_Painter_FrgColor.Text = "Foreground Color";
             this.checkBox_Painter_FrgColor.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_Painter_BkgColor
+            // 
+            this.checkBox_Painter_BkgColor.AutoSize = true;
+            this.checkBox_Painter_BkgColor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox_Painter_BkgColor.Location = new System.Drawing.Point(6, 26);
+            this.checkBox_Painter_BkgColor.Name = "checkBox_Painter_BkgColor";
+            this.checkBox_Painter_BkgColor.Size = new System.Drawing.Size(122, 19);
+            this.checkBox_Painter_BkgColor.TabIndex = 0;
+            this.checkBox_Painter_BkgColor.Text = "Background Color";
+            this.checkBox_Painter_BkgColor.UseVisualStyleBackColor = true;
             // 
             // groupBox_TextView
             // 
@@ -419,62 +421,6 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Text Pallete";
-            // 
-            // label_Text_1
-            // 
-            this.label_Text_1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_Text_1.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.label_Text_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_Text_1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label_Text_1.ForeColor = System.Drawing.Color.Black;
-            this.label_Text_1.Location = new System.Drawing.Point(6, 22);
-            this.label_Text_1.Name = "label_Text_1";
-            this.label_Text_1.Size = new System.Drawing.Size(254, 22);
-            this.label_Text_1.TabIndex = 1;
-            this.label_Text_1.Text = "The quick brown fox jumps over the lazy dog";
-            // 
-            // label_Text_2
-            // 
-            this.label_Text_2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_Text_2.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.label_Text_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_Text_2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label_Text_2.ForeColor = System.Drawing.Color.Black;
-            this.label_Text_2.Location = new System.Drawing.Point(6, 44);
-            this.label_Text_2.Name = "label_Text_2";
-            this.label_Text_2.Size = new System.Drawing.Size(254, 22);
-            this.label_Text_2.TabIndex = 2;
-            this.label_Text_2.Text = "The quick brown fox jumps over the lazy dog";
-            // 
-            // label_Text_3
-            // 
-            this.label_Text_3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_Text_3.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.label_Text_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_Text_3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label_Text_3.ForeColor = System.Drawing.Color.Black;
-            this.label_Text_3.Location = new System.Drawing.Point(6, 66);
-            this.label_Text_3.Name = "label_Text_3";
-            this.label_Text_3.Size = new System.Drawing.Size(254, 22);
-            this.label_Text_3.TabIndex = 3;
-            this.label_Text_3.Text = "The quick brown fox jumps over the lazy dog";
-            // 
-            // label_Text_4
-            // 
-            this.label_Text_4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_Text_4.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.label_Text_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_Text_4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label_Text_4.ForeColor = System.Drawing.Color.Black;
-            this.label_Text_4.Location = new System.Drawing.Point(6, 88);
-            this.label_Text_4.Name = "label_Text_4";
-            this.label_Text_4.Size = new System.Drawing.Size(254, 22);
-            this.label_Text_4.TabIndex = 4;
-            this.label_Text_4.Text = "The quick brown fox jumps over the lazy dog";
             // 
             // label_Text_8
             // 
@@ -531,6 +477,62 @@
             this.label_Text_5.Size = new System.Drawing.Size(254, 22);
             this.label_Text_5.TabIndex = 5;
             this.label_Text_5.Text = "The quick brown fox jumps over the lazy dog";
+            // 
+            // label_Text_4
+            // 
+            this.label_Text_4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Text_4.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label_Text_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Text_4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_Text_4.ForeColor = System.Drawing.Color.Black;
+            this.label_Text_4.Location = new System.Drawing.Point(6, 88);
+            this.label_Text_4.Name = "label_Text_4";
+            this.label_Text_4.Size = new System.Drawing.Size(254, 22);
+            this.label_Text_4.TabIndex = 4;
+            this.label_Text_4.Text = "The quick brown fox jumps over the lazy dog";
+            // 
+            // label_Text_3
+            // 
+            this.label_Text_3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Text_3.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label_Text_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Text_3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_Text_3.ForeColor = System.Drawing.Color.Black;
+            this.label_Text_3.Location = new System.Drawing.Point(6, 66);
+            this.label_Text_3.Name = "label_Text_3";
+            this.label_Text_3.Size = new System.Drawing.Size(254, 22);
+            this.label_Text_3.TabIndex = 3;
+            this.label_Text_3.Text = "The quick brown fox jumps over the lazy dog";
+            // 
+            // label_Text_2
+            // 
+            this.label_Text_2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Text_2.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label_Text_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Text_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_Text_2.ForeColor = System.Drawing.Color.Black;
+            this.label_Text_2.Location = new System.Drawing.Point(6, 44);
+            this.label_Text_2.Name = "label_Text_2";
+            this.label_Text_2.Size = new System.Drawing.Size(254, 22);
+            this.label_Text_2.TabIndex = 2;
+            this.label_Text_2.Text = "The quick brown fox jumps over the lazy dog";
+            // 
+            // label_Text_1
+            // 
+            this.label_Text_1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Text_1.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label_Text_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Text_1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_Text_1.ForeColor = System.Drawing.Color.Black;
+            this.label_Text_1.Location = new System.Drawing.Point(6, 22);
+            this.label_Text_1.Name = "label_Text_1";
+            this.label_Text_1.Size = new System.Drawing.Size(254, 22);
+            this.label_Text_1.TabIndex = 1;
+            this.label_Text_1.Text = "The quick brown fox jumps over the lazy dog";
             // 
             // ColorGenerator
             // 
