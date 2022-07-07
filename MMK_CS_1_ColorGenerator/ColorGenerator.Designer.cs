@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColorGenerator));
             this.groupBox_Color = new System.Windows.Forms.GroupBox();
             this.label_Color_Blue_Value = new System.Windows.Forms.Label();
             this.label_Color_Green_Value = new System.Windows.Forms.Label();
@@ -58,16 +57,7 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip_StatusBar = new System.Windows.Forms.StatusStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_MainMenu = new System.Windows.Forms.MenuStrip();
@@ -99,7 +89,7 @@
             this.groupBox_Color.Size = new System.Drawing.Size(389, 187);
             this.groupBox_Color.TabIndex = 2;
             this.groupBox_Color.TabStop = false;
-            this.groupBox_Color.Text = "Color";
+            this.groupBox_Color.Text = "رنگ";
             // 
             // label_Color_Blue_Value
             // 
@@ -148,9 +138,10 @@
             this.label_Color_Blue.ForeColor = System.Drawing.Color.Blue;
             this.label_Color_Blue.Location = new System.Drawing.Point(6, 132);
             this.label_Color_Blue.Name = "label_Color_Blue";
-            this.label_Color_Blue.Size = new System.Drawing.Size(33, 15);
+            this.label_Color_Blue.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label_Color_Blue.Size = new System.Drawing.Size(27, 15);
             this.label_Color_Blue.TabIndex = 4;
-            this.label_Color_Blue.Text = "Blue:";
+            this.label_Color_Blue.Text = "آبی:";
             // 
             // trackBar_Color_Green
             // 
@@ -169,9 +160,10 @@
             this.label_Color_Green.ForeColor = System.Drawing.Color.Green;
             this.label_Color_Green.Location = new System.Drawing.Point(6, 81);
             this.label_Color_Green.Name = "label_Color_Green";
-            this.label_Color_Green.Size = new System.Drawing.Size(41, 15);
+            this.label_Color_Green.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label_Color_Green.Size = new System.Drawing.Size(29, 15);
             this.label_Color_Green.TabIndex = 2;
-            this.label_Color_Green.Text = "Green:";
+            this.label_Color_Green.Text = "سبز:";
             // 
             // trackBar_Color_Red
             // 
@@ -191,9 +183,10 @@
             this.label_Color_Red.ForeColor = System.Drawing.Color.Red;
             this.label_Color_Red.Location = new System.Drawing.Point(6, 30);
             this.label_Color_Red.Name = "label_Color_Red";
-            this.label_Color_Red.Size = new System.Drawing.Size(30, 15);
+            this.label_Color_Red.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label_Color_Red.Size = new System.Drawing.Size(32, 15);
             this.label_Color_Red.TabIndex = 0;
-            this.label_Color_Red.Text = "Red:";
+            this.label_Color_Red.Text = "قرمز:";
             // 
             // groupBox_ColorView
             // 
@@ -205,7 +198,7 @@
             this.groupBox_ColorView.Size = new System.Drawing.Size(161, 187);
             this.groupBox_ColorView.TabIndex = 3;
             this.groupBox_ColorView.TabStop = false;
-            this.groupBox_ColorView.Text = "Color View";
+            this.groupBox_ColorView.Text = "نمایش رنگ";
             // 
             // label_ColorView
             // 
@@ -228,28 +221,28 @@
             this.groupBox_Painter.Size = new System.Drawing.Size(284, 62);
             this.groupBox_Painter.TabIndex = 4;
             this.groupBox_Painter.TabStop = false;
-            this.groupBox_Painter.Text = "Painter";
+            this.groupBox_Painter.Text = "رنگ کننده";
             // 
             // checkBox_Painter_FrgColor
             // 
             this.checkBox_Painter_FrgColor.AutoSize = true;
             this.checkBox_Painter_FrgColor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox_Painter_FrgColor.Location = new System.Drawing.Point(157, 26);
+            this.checkBox_Painter_FrgColor.Location = new System.Drawing.Point(171, 26);
             this.checkBox_Painter_FrgColor.Name = "checkBox_Painter_FrgColor";
-            this.checkBox_Painter_FrgColor.Size = new System.Drawing.Size(120, 19);
+            this.checkBox_Painter_FrgColor.Size = new System.Drawing.Size(98, 19);
             this.checkBox_Painter_FrgColor.TabIndex = 1;
-            this.checkBox_Painter_FrgColor.Text = "Foreground Color";
+            this.checkBox_Painter_FrgColor.Text = "رنگ پیش زمینه";
             this.checkBox_Painter_FrgColor.UseVisualStyleBackColor = true;
             // 
             // checkBox_Painter_BkgColor
             // 
             this.checkBox_Painter_BkgColor.AutoSize = true;
             this.checkBox_Painter_BkgColor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox_Painter_BkgColor.Location = new System.Drawing.Point(6, 26);
+            this.checkBox_Painter_BkgColor.Location = new System.Drawing.Point(24, 26);
             this.checkBox_Painter_BkgColor.Name = "checkBox_Painter_BkgColor";
-            this.checkBox_Painter_BkgColor.Size = new System.Drawing.Size(122, 19);
+            this.checkBox_Painter_BkgColor.Size = new System.Drawing.Size(94, 19);
             this.checkBox_Painter_BkgColor.TabIndex = 0;
-            this.checkBox_Painter_BkgColor.Text = "Background Color";
+            this.checkBox_Painter_BkgColor.Text = "رنگ پس زمینه";
             this.checkBox_Painter_BkgColor.UseVisualStyleBackColor = true;
             // 
             // groupBox_TextView
@@ -262,7 +255,7 @@
             this.groupBox_TextView.Size = new System.Drawing.Size(266, 62);
             this.groupBox_TextView.TabIndex = 5;
             this.groupBox_TextView.TabStop = false;
-            this.groupBox_TextView.Text = "Text View (Click to update)";
+            this.groupBox_TextView.Text = "نمایش متن (برای به روز رسانی، کلیک کنید)";
             // 
             // label_TextView
             // 
@@ -297,7 +290,7 @@
             this.groupBox1.Size = new System.Drawing.Size(556, 121);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Text Pallete";
+            this.groupBox1.Text = "پالت متن";
             // 
             // label_Text_8
             // 
@@ -406,8 +399,8 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(39, 17);
-            this.toolStripStatusLabel1.Text = "Ready";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(62, 17);
+            this.toolStripStatusLabel1.Text = "آماده به کار";
             // 
             // statusStrip_StatusBar
             // 
@@ -422,106 +415,35 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem,
-            this.openToolStripMenuItem,
-            this.toolStripSeparator,
-            this.saveToolStripMenuItem,
-            this.saveAsToolStripMenuItem,
-            this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "&File";
-            // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
-            this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.newToolStripMenuItem.Text = "&New";
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
-            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.openToolStripMenuItem.Text = "&Open";
-            // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
-            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.saveToolStripMenuItem.Text = "&Save";
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.saveAsToolStripMenuItem.Text = "Save &As";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.fileToolStripMenuItem.Text = "&فایل";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
-            // 
-            // toolsToolStripMenuItem
-            // 
-            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.customizeToolStripMenuItem,
-            this.optionsToolStripMenuItem});
-            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.toolsToolStripMenuItem.Text = "&Tools";
-            // 
-            // customizeToolStripMenuItem
-            // 
-            this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.customizeToolStripMenuItem.Text = "&Customize";
-            // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.optionsToolStripMenuItem.Text = "&Options";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "&خروج";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "&Help";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.helpToolStripMenuItem.Text = "&راهنما";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.aboutToolStripMenuItem.Text = "&About...";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "&درباره...";
             // 
             // menuStrip_MainMenu
             // 
             this.menuStrip_MainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.toolsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip_MainMenu.Location = new System.Drawing.Point(0, 0);
             this.menuStrip_MainMenu.Name = "menuStrip_MainMenu";
@@ -544,7 +466,9 @@
             this.MainMenuStrip = this.menuStrip_MainMenu;
             this.MinimumSize = new System.Drawing.Size(596, 473);
             this.Name = "ColorGenerator";
-            this.Text = "Mehrbod M.K. C# Color Generator";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeftLayout = true;
+            this.Text = "مهربد ملاکاظمی - تولید کننده رنگ";
             this.groupBox_Color.ResumeLayout(false);
             this.groupBox_Color.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Color_Blue)).EndInit();
@@ -594,16 +518,7 @@
         private ToolStripStatusLabel toolStripStatusLabel1;
         private StatusStrip statusStrip_StatusBar;
         private ToolStripMenuItem fileToolStripMenuItem;
-        private ToolStripMenuItem newToolStripMenuItem;
-        private ToolStripMenuItem openToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator;
-        private ToolStripMenuItem saveToolStripMenuItem;
-        private ToolStripMenuItem saveAsToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator1;
         private ToolStripMenuItem exitToolStripMenuItem;
-        private ToolStripMenuItem toolsToolStripMenuItem;
-        private ToolStripMenuItem customizeToolStripMenuItem;
-        private ToolStripMenuItem optionsToolStripMenuItem;
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
         private MenuStrip menuStrip_MainMenu;
