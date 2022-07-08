@@ -45,7 +45,7 @@
             this.checkBox_Painter_BkgColor = new System.Windows.Forms.CheckBox();
             this.groupBox_TextView = new System.Windows.Forms.GroupBox();
             this.label_TextView = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox_TextPallete = new System.Windows.Forms.GroupBox();
             this.label_Text_8 = new System.Windows.Forms.Label();
             this.label_Text_7 = new System.Windows.Forms.Label();
             this.label_Text_6 = new System.Windows.Forms.Label();
@@ -68,7 +68,7 @@
             this.groupBox_ColorView.SuspendLayout();
             this.groupBox_Painter.SuspendLayout();
             this.groupBox_TextView.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupBox_TextPallete.SuspendLayout();
             this.statusStrip_StatusBar.SuspendLayout();
             this.menuStrip_MainMenu.SuspendLayout();
             this.SuspendLayout();
@@ -272,25 +272,25 @@
             this.label_TextView.Text = "The quick brown fox jumps over the lazy dog";
             this.label_TextView.Click += new System.EventHandler(this.label_TextView_Click);
             // 
-            // groupBox1
+            // groupBox_TextPallete
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.groupBox_TextPallete.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.label_Text_8);
-            this.groupBox1.Controls.Add(this.label_Text_7);
-            this.groupBox1.Controls.Add(this.label_Text_6);
-            this.groupBox1.Controls.Add(this.label_Text_5);
-            this.groupBox1.Controls.Add(this.label_Text_4);
-            this.groupBox1.Controls.Add(this.label_Text_3);
-            this.groupBox1.Controls.Add(this.label_Text_2);
-            this.groupBox1.Controls.Add(this.label_Text_1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 288);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(556, 121);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "پالت متن";
+            this.groupBox_TextPallete.Controls.Add(this.label_Text_8);
+            this.groupBox_TextPallete.Controls.Add(this.label_Text_7);
+            this.groupBox_TextPallete.Controls.Add(this.label_Text_6);
+            this.groupBox_TextPallete.Controls.Add(this.label_Text_5);
+            this.groupBox_TextPallete.Controls.Add(this.label_Text_4);
+            this.groupBox_TextPallete.Controls.Add(this.label_Text_3);
+            this.groupBox_TextPallete.Controls.Add(this.label_Text_2);
+            this.groupBox_TextPallete.Controls.Add(this.label_Text_1);
+            this.groupBox_TextPallete.Location = new System.Drawing.Point(12, 288);
+            this.groupBox_TextPallete.Name = "groupBox_TextPallete";
+            this.groupBox_TextPallete.Size = new System.Drawing.Size(556, 121);
+            this.groupBox_TextPallete.TabIndex = 6;
+            this.groupBox_TextPallete.TabStop = false;
+            this.groupBox_TextPallete.Text = "پالت متن";
             // 
             // label_Text_8
             // 
@@ -425,6 +425,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "&خروج";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -439,6 +440,7 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "&درباره...";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // menuStrip_MainMenu
             // 
@@ -456,7 +458,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 434);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox_TextPallete);
             this.Controls.Add(this.groupBox_TextView);
             this.Controls.Add(this.groupBox_Painter);
             this.Controls.Add(this.groupBox_ColorView);
@@ -468,6 +470,7 @@
             this.Name = "ColorGenerator";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "مهربد ملاکاظمی - تولید کننده رنگ";
             this.groupBox_Color.ResumeLayout(false);
             this.groupBox_Color.PerformLayout();
@@ -478,7 +481,7 @@
             this.groupBox_Painter.ResumeLayout(false);
             this.groupBox_Painter.PerformLayout();
             this.groupBox_TextView.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.groupBox_TextPallete.ResumeLayout(false);
             this.statusStrip_StatusBar.ResumeLayout(false);
             this.statusStrip_StatusBar.PerformLayout();
             this.menuStrip_MainMenu.ResumeLayout(false);
@@ -506,7 +509,7 @@
         private CheckBox checkBox_Painter_FrgColor;
         private GroupBox groupBox_TextView;
         private Label label_TextView;
-        private GroupBox groupBox1;
+        private GroupBox groupBox_TextPallete;
         private Label label_Text_8;
         private Label label_Text_7;
         private Label label_Text_6;

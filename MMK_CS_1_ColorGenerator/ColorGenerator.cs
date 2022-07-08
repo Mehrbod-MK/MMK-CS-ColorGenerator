@@ -1,4 +1,4 @@
-namespace MMK_CS_1_ColorGenerator
+﻿namespace MMK_CS_1_ColorGenerator
 {
     public partial class ColorGenerator : Form
     {
@@ -68,6 +68,16 @@ namespace MMK_CS_1_ColorGenerator
         private void label_Texts_Click(object sender, EventArgs e)
         {
             setLabelColors((Label)sender, label_ColorView.BackColor);
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("به نام خدا\nاین یک برنامه جهت تولید رنگ های مختلف به زبان سی شارپ می باشد.\nاین نرم افزار توسط مهربد ملاکاظمی خوبده طراحی و توسعه یافته است.", "درباره ما", MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
         }
     }
 }
